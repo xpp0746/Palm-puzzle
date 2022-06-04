@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    //上部图片
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@mipmap/icon_blackground"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    //简单模式按钮图片
+    <Button
+        android:id="@+id/easy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="简单模式"
+        android:layout_marginTop="50dp"
+        android:onClick="easy_onclick"/>
+
+    //一般模式按钮控件
+    <Button
+        android:id="@+id/average_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="一般模式"
+        android:layout_marginTop="20dp"
+        android:onClick="average_onclick"/>
+
+    //困难模式按钮点击事件
+    <Button
+        android:id="@+id/difficult_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="困难模式"
+        android:layout_marginTop="20dp"
+        android:onClick="difficult_onclick"/>
+
+    <TextView
+        android:id="@+id/xiaopeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design by xiaopeng"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

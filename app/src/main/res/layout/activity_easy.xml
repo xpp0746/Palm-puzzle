@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EasyActivity">
+
+
+    //时间
+    <TextView
+        android:id="@+id/pt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用时 : 0秒"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#148FF1"
+        android:layout_marginTop="5dp"/>
+
+
+    //原图
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pt_original"
+        android:src="@mipmap/es_original"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+
+    //第一行图片
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/pt_line0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+
+        <ImageButton
+            android:id="@+id/pt_line0_00x00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/es_00x00"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:id="@+id/pt_line0_00x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/es_00x01"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:id="@+id/pt_line0_00x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/es_00x02"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+    //第二行图片
+    <LinearLayout
+        android:id="@+id/pt_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/pt_line1_01x00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/es_01x00"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:id="@+id/pt_line1_01x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/es_01x01"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pt_line1_01x02"
+            android:src="@mipmap/es_01x02"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+    //第三行图片
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pt_line2"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pt_line2_02x00"
+            android:src="@mipmap/es_02x00"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pt_line2_02x01"
+            android:src="@mipmap/es_02x01"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pt_line2_02x02"
+            android:src="@mipmap/es_02x02"
+            android:padding="0dp"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    //重新开始按钮
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pt_Butten_start"
+        android:text="开始游戏"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:onClick="start"/>
+
+</LinearLayout>
