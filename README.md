@@ -1,6 +1,6 @@
 掌上拼图
 基于java的Android
-
+https://github.com/xpp0746/Palm-puzzle/blob/main/%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A21.png
 
 目前只更新到简单一般困难三种模式
 预计后续会加入
